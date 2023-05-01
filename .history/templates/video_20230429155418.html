@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video</title>
+  </head>
+  <style>
+    .video {
+      background: #fff;
+    }
+  </style>
+  <body>
+    <div class="video">
+      <h1>Live streaming</h1>
+      <button onclick="{handleShowVideo}">show video</button>
+      <div>
+        <img
+          style="background: white"
+          src="{{ url_for('video') }}"
+          width="50%"
+        />
+      </div>
+      <div>
+        {% if msg_yawn %}
+        <div>{{msg_yawn}}</div>
+        {% endif %}
+        <br />
+        {% if msg_sleep %}
+        <div>{{msg_sleep}}</div>
+        {% endif %}
+        <br />
+        {% if message %}
+        <div>{{message}}</div>
+        {% endif %}
+      </div>
+    </div>
+    <script>
+      "{{url_for('static', filename='js/video.js')}}";
+    </script>
+  </body>
+</html>

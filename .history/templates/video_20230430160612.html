@@ -1,0 +1,65 @@
+{% extends "common.html" %} {% block title%} Detection {% endblock %} {% block
+main %}
+<div class="video">
+  <div class="alert alert-success">
+    <h1 class="text-center">Live streaming</h1>
+  </div>
+
+  <!--      <button onclick="handleShowVideo">show video</button>-->
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center align-items-center">
+      <img class="img-fluid rounded" src="{{ url_for('video') }}" />
+    </div>
+  </div>
+  <!--      <div>-->
+  <!--        {% if msg_yawn %}-->
+
+  <!--        toast-->
+  <div
+    class="toast align-items-center show fade success"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+    data-delay="2000"
+    auto-hide="true"
+  >
+    <div class="toast-content">
+      <div class="content-body d-flex align-items-center">
+        <div class="icon me-4">
+          <i class="fi fi-rr-badge-check d-flex"></i>
+        </div>
+        <div class="d-flex justify-content-between w-100">
+          <div>
+            <h5 class="fw-bold mb-1">Success</h5>
+            <p class="text-muted mb-0">
+              Hello, world! This is a toast message.
+            </p>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="ml-2 mb-1 close"
+              data-dismiss="toast"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--        toast-->
+
+  <!--        {% endif %}-->
+  <!--        <br />-->
+  <!--        {% if msg_sleep %}-->
+  <!--        <div>{{msg_sleep}}</div>-->
+  <!--        {% endif %}-->
+  <!--        <br />-->
+  <!--        {% if message %}-->
+  <!--        <div>{{message}}</div>-->
+  <!--        {% endif %}-->
+  <!--      </div>-->
+</div>
+{% endblock %}
