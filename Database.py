@@ -13,9 +13,8 @@ class Notification:
         cursor = conn.cursor()
         q1 = "CREATE TABLE IF NOT EXISTS notification (id INTEGER PRIMARY KEY, username TEXT,time TEXT, notify TEXT)"
         cursor.execute(q1)
-        q2= "INSERT INTO notification VALUES(NULL,?,?,?)"
-        cursor.execute(q2,("THANH NHAN", message, date_time))
-
+        q2 = "INSERT INTO notification VALUES(NULL,?,?,?)"
+        cursor.execute(q2, ("THANH NHAN", message, date_time))
         conn.commit()
         conn.close()
 

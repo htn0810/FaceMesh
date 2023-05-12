@@ -26,7 +26,7 @@
       href="{{url_for('static', filename='css/index.css')}}"
     />
   </head>
-  <body>
+  <body class="theme chiller-theme">
     <div class="page-wrapper theme chiller-theme toggled">
       <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
         <i class="fas fa-bars"></i>
@@ -43,7 +43,7 @@
             <div class="user-pic">
               <img
                 class="img-responsive img-rounded"
-                src="https://images.unsplash.com/photo-1682553064442-272b63b5a541?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                src="https://new.sim.edu.vn/wp-content/uploads/2021/11/Logo-BK-400.png"
                 alt="User picture"
               />
             </div>
@@ -69,20 +69,20 @@
               </li>
               <li>
                 <a href="/">
-                  <i class="fa fa-tachometer-alt"></i>
+                  <i class="fa fa-home"></i>
                   <span>Home</span>
                 </a>
               </li>
               <li>
                 <a href="/video">
-                  <i class="fa fa-tachometer-alt"></i>
+                  <i class="fa fa-video"></i>
                   <span>Video</span>
                 </a>
               </li>
 
               <li class="sidebar-dropdown">
                 <a href="#">
-                  <i class="far fa-gem"></i>
+                  <i class="fa fa-chart-line"></i>
                   <span>Statistics</span>
                 </a>
                 <div class="sidebar-submenu">
@@ -96,29 +96,13 @@
                   </ul>
                 </div>
               </li>
-              <li class="sidebar-dropdown">
+              <li >
                 <a href="/notification">
-                  <i class="fa fa-chart-line"></i>
+                  <i class="fa fa-bell"></i>
                   <span>Notification</span>
                 </a>
+              </li>
 
-              </li>
-              <li class="sidebar-dropdown">
-                <a href="#">
-                  <i class="fa fa-globe"></i>
-                  <span>Maps</span>
-                </a>
-                <div class="sidebar-submenu">
-                  <ul>
-                    <li>
-                      <a href="#">Google maps</a>
-                    </li>
-                    <li>
-                      <a href="#">Open street map</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
               <li class="header-menu"></li>
             </ul>
           </div>
@@ -127,7 +111,7 @@
         <!-- sidebar-content  -->
       </nav>
       <!-- sidebar-wrapper  -->
-       <main class="page-content">{% block main %}{% endblock %}</main>
+       <main class="page-content chiller-theme">{% block main %}{% endblock %}</main>
       <!-- page-content" -->
     </div>
 

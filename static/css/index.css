@@ -536,3 +536,8 @@ background-color: #eee;
 .text18 {
 font-size: 18px;
 }
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
